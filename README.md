@@ -1,9 +1,9 @@
 # Lyra IO
-The Lyra/IO is a wrapper to the Symfony file system which allows the user to have a log actions and also run the changes in dryrun mode. This is good
-for working with sensitive data. Every action can be simulated before being actually acted on.
+The Lyra/IO is a wrapper to the Symfony file system which allows the user to log actions and also run the changes in dryrun mode. This is good
+for working with sensitive data. Every action can be simulated before being actually called.
 
 ## Installation
-To install lyra/io you only need to have composer installed. The composer can be downloaded and installed from the [composer website](https://getcomposer.org/download/). Afterwards you only need to add `rzuw/lyra-io` to your requirements. The `rzwu/lyra-io` will be downloaded from [packagist](https://packagist.org/).
+To install `rzuw/lyra-io` you only need to have composer installed. The composer can be downloaded and installed from the [composer website](https://getcomposer.org/download/). Afterwards you only need to add `rzuw/lyra-io` to your requirements. The `rzwu/lyra-io` will be downloaded from [packagist](https://packagist.org/).
 
 ```lang=bash
 composer require rzuw/lyra-io
@@ -69,7 +69,7 @@ $io = new IO($logger);
 $io->copy("/etc/passwd","/etc/passwd.back");
 ```
 
-if there is an error the application will through `IOExceptions`.
+if there is an error the application will through an `IOException`.
 
 ## Test and Development
 The test can be done using `phpunit`. The needed configuration and sample tests are available in `tests` folder.
