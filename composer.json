@@ -1,0 +1,20 @@
+{
+    "name": "rzuw/lyra-io",
+    "description": "Lyra IO component",
+    "version": "0.0.1",
+    "license": "MIT",
+    "authors": [{
+        "name": "Pouyan Azari",
+        "email": "pouyan.azari@uni-wuerzburg.de"
+    }],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "De\\Uniwue\\RZ\\Lyra\\IO": "src/",
+            "De\\Uniwue\\RZ\\Lyra\\Exceptions": "src/"
+        }
+    },
+    "require": {
+        "symfony/filesystem": "*"
+    }
+}
